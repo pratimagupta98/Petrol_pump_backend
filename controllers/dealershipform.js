@@ -304,11 +304,11 @@ exports.addstate= async (req, res) => {
       .then((data) => resp.successr(res, data))
       .catch((error) => resp.errorr(res, error));
   }
-};
-exports.getdistrict = async (req, res) => {
-  await State.find({id:1})
-    .sort({ sortorder: 1 })
-    .then((data) => resp.successr(res, data))
-    .catch((error) => resp.errorr(res, error));
-};
+ };
+// exports.getdistrict = async (req, res) => {
+//   await State.find({id:1})
+//     .sort({ sortorder: 1 })
+//     .then((data) => resp.successr(res, data))
+//     .catch((error) => resp.errorr(res, error));
+// };
 
